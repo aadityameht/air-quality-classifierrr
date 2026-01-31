@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Air Quality Safety Classifier</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="card">
+    <h1>🌍 Air Quality Safety Classifier</h1>
+    <p class="subtitle">Real-time air quality assessment using ML</p>
+
+    <div class="grid">
+      <div>
+        <label>CO₂ (ppm)</label>
+        <input type="number" id="co2" value="800">
+      </div>
+
+      <div>
+        <label>NO₂ (ppb)</label>
+        <input type="number" id="no2" value="30">
+      </div>
+
+      <div>
+        <label>SO₂ (ppb)</label>
+        <input type="number" id="so2" value="15">
+      </div>
+
+      <div>
+        <label>O₃ (ppb)</label>
+        <input type="number" id="o3" value="60">
+      </div>
+
+      <div class="full">
+        <label>PM2.5 (µg/m³)</label>
+        <input type="number" id="pm25" value="20">
+      </div>
+    </div>
+
+    <button id="classifyBtn">Check Air Quality</button>
+
+    <!-- result -->
+    <div id="result" class="result hidden">
+      <h2 id="quality"></h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <!-- JS hamesha body ke end me -->
+  <script src="script.js"></script>
+</body>
+</html>
